@@ -260,8 +260,9 @@ Ans: SEO(Search Engine Optimization) is the practice of optimizing a website to 
 3. Use Meta Description Tags.
 4. Use Proper Heading Tags.
 5. Optimize Image Alt Attributes.
-
-
+***********************************************************************************
+## Q: What is Responsive Design?
+Ans: Responsive design is a practice of creating web pages that **adapt** and display well on various device and **screen sizes**.
 
 
 
