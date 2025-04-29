@@ -251,8 +251,15 @@ Form elements and Attribute:
         <input type="submit" value="Submit">
     </form>
 ```
-********************************************************************************88
-
+********************************************************************************
+## WHat is SEO? What are 5 HTML Best practices for SEO?
+Ans: SEO(Search Engine Optimization) is the practice of optimizing a website to improve its **visibility** and **ranking** in search engine results.
+### 5 HTML Best practices for SEO
+1. Use Semantic HTML Elements.
+2. Optimize Page Titles.
+3. Use Meta Description Tags.
+4. Use Proper Heading Tags.
+5. Optimize Image Alt Attributes.
 
 
 
