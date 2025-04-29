@@ -112,5 +112,74 @@ Ans: Semantic elements in HTML are elements that provide **meaning to the conten
 </footer>
 
 ```
+5. address -> Provides contact info for the author/owner.
+```html
+<address>
+  Contact us at: <a href="mailto:info@example.com">info@example.com</a>
+</address>
+
+```
+6. progress -> Shows task completion progress.
+```html
+<label for="upload">Uploading file:</label>
+<progress id="upload" value="70" max="100">70%</progress>
+```
+7. nav -> Defines navigation links.
+```html
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+```
+8. time -> Represents date or time.
+```html
+<time datetime="2025-04-29">April 29, 2025</time>
+```
+9. mark -> Highlights text.
+```html
+<p>Don't forget to <mark>submit your form</mark> before Friday.</p>
+```
+10. summary + details -> summary is the visible part, and details toggles extra info.
+```html
+<details>
+  <summary>More info</summary>
+  <p>This section contains extra details you can show or hide.</p>
+</details>
+```
+11. meter -> Represents a measurement in a known range.
+```html
+<label for="disk">Disk usage:</label>
+<meter id="disk" value="0.6">60%</meter>
+
+```
+12. figure + figcaption ->Used for self-contained media like images, diagrams, charts.
+```html
+<figure>
+  <img src="image.jpg" alt="Nature">
+  <figcaption>A beautiful nature photo</figcaption>
+</figure>
+
+```
+13. aside -> Contains related content (like ads, links, tips).
+```html
+<aside>
+  <h3>Related Posts</h3>
+  <ul>
+    <li><a href="/post1">How to learn HTML</a></li>
+  </ul>
+</aside>
+
+```
+14. articale -> For independent content like blog posts or news.
+```html
+<article>
+  <h2>Top 5 HTML5 Tips</h2>
+  <p>Learn how to write semantic HTML easily.</p>
+</article>
+
+```
+**************************************************************
 
 
