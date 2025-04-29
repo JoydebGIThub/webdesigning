@@ -181,5 +181,21 @@ Ans: Semantic elements in HTML are elements that provide **meaning to the conten
 
 ```
 **************************************************************
-
+## Q: What are 3 differences between Block-level and Inline Elements?
+1. Block-level elements create "**blocks**" of content.
+#### Example: 
+```html
+<div>, <p>, <h1>, <ul>, <li>, <form> 
+```
+2. By default block-level elements start on a new line.
+3. You can set both "**width**" and "**height**" for a block-level elements.
+----------------------------------------------------------------------
+1. inline elements length depends on their "**content length**"
+#### Example:
+```html
+<span>, <a>, <strong>, <em>, <img>, <input>, <br>
+```
+2. Inline elements do not start on a new line.
+3. You can't set width and height for inline element.
+*******************************************************************
 
