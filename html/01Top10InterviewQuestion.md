@@ -198,4 +198,72 @@ Ans: Semantic elements in HTML are elements that provide **meaning to the conten
 2. Inline elements do not start on a new line.
 3. You can't set width and height for inline element.
 *******************************************************************
+## Q: What is the difference between Absolute and Relative URLs?
+Ans:
+- Absolute URL:
+  1. Absolute URLs provide the "**complete web address**" of a resource.
+  2. Absolute URLs are typically used to link a resources on "**different websites**".
+  3. Connect the "**External website**"
+```html
+<h2>Absolute Urls</h2>
+    <ul>
+        <li><a href="http://www.abc.com">HTTP URL</a></li>
+        <li><a href="ftp://ftp.abc.com/doc.pdf">FTP URL</a></li>
+        <li><a href="mailro:info@abc.com">Mailto URL</a></li>
+    </ul>
+```
+- Relative URL:
+  1. Relative URLs specify the location of a resource in **relation** to the current document. Full url is not required.
+  2. They are used when linking to resource within the **same website**.
+```html
+<!--example/index.html-->
+    <h2>Relative URL</h2>
+    <ul>
+        <li><a href="page.html">Same Directory</a></li>
+        <li><a href="sub/page.html">Subdirectory</a></li>
+        <li><a href="../page.html">parent Directory</a></li>
+        <li><img src="images/image.jpg" alt="Image"></li>
+        <li><link rel="stylesheet" href="style/style.css"></li>
+        <li><script src="scripts/script.js"></script></li>
+    </ul>
+```
+************************************************************************
+## Q: What are HTML Forms Elements and their Main Attribute?
+Ans:
+Form elements and Attribute:
+1. form element:- it is the container of form element
+2. action attribute:- it specifies the URL where the form data will be sent when it is submitted
+3. method attribute:- it defines the **HTTP method** to be used when sending the form data.
+4. label element:- it is used to provide a label of **description** for an input field
+5. for attribute:- The **for** attribute **associate** the level with a specific input field
+6. input element:- it is used to **create controls**
+7. type attribute:- specifies the type of input field
+8. name attribute: is used to **define a name** for the input field
+```html
+
+    <form action="/submit" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="pwd" name="password">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+```
+********************************************************************************88
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
