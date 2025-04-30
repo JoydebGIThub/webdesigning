@@ -196,7 +196,65 @@ console.log(string == number); // true
 console.log(boolean == 1); // true
 console.log(boolean + nullValue); //1
 ```
-
-
-
+### Uses:
+1. Type coercion can be used during **String and Number concatination**.
+2. Type coercion can be used while using **comparison operators**
+*******************************************************************************************
+## When to use which type of conditions statements in real application?
+- If-else: for complex, different & **multiline execution**
+  - Benefit: Cover all scenarios.
+- Ternary Operators: for single conditions & "**single value evaluations**"
+  - Benefit: Short one line syntax
+- Switch case: For same left-side values
+  - Benefit: More structured code
+******************************************************************************************
+## What is the difference between == and ===?
+Ans: 
+- Loose Equality (**==**): Operator compares two values for equality after **performing type coercion**.
+```js
+console.log(1 == '1'); // true
+console.log(true == 1); // true
+```
+- Strict Equality (**===**): Operator compares two value for equality **without performing the type coercion**.
+```js
+console.log(1 === '1'); //false
+console.log(true === 1); //false
+```
+****************************************************************************************
+## What is the difference between find() and filter() methods of an Array?
+Ans: 
+- **find()** method get the **first element** that satisfies a condition.
+```js
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let c = arr.find((num) => num % 2 === 0);
+console.log(c); // 2
+```
+- **filter()** method **get an array of element** means all the elements which saticfies the condition .
+```js
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let c = arr.filter((num) => num % 2 === 0);
+console.log(c); // [2, 4, 6, 8]
+```
+******************************************************************************************
+## What is string immutability?
+Ans: String in Javascript are considered **immutable** because you **cannot modify** the contents of an existing string directyly.
+******************************************************************************************
+## What is DOM? What is the difference between HTML and DOM?
+Ans: The DOM (Document Object Model) represents the web page as a **tree-like sturcture** that allows Javascript to dynamically access and manipulate the content and structure of a web page
+HTML is a markup language for **reading** and **writing** for developer and user. But in reality **memory plays with DOM**
+******************************************************************************************
+## What is Erro Handling in JS?
+Ans: Error handling is the process of **managing errors**.
+*****************************************************************************************
+## What is asynchronous programming in JS? What is its use?
+Ans: 
+- Asynchronous programming allows multiple tasks or operations to be **initiated and executed concurrently**
+- Asynchronous operations **do not block** the execution of the code.
+### Use:
+1. Fetching Data from API
+2. Downloading Files
+3. Uploading Files
+4. Animations and Transitions
+5. Time taking operations
+**JS is single Threaded, but managing the taks we can make it concurrent and parallal**
 
