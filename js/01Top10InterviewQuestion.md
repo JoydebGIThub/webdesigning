@@ -104,7 +104,40 @@ console.log(z);
 ```
 **const can be assigned only once, and its value cannot be changed afterwards.**
 *****************************************************************************
-
+## Q: What is the difference between primitive and non-primitive data types?
+Ans: **Primitive** and **Non-Primitive** are the categories of data types.
+- The actual data types from Primitive:
+1. Numbers
+2. Strings
+3. Booleans
+4. Undifined
+5. null
+- The actual data types from Non-primitive:
+1. Object
+2. Array
+3. Function
+4. Date
+5. RegExp
+### Fundamental difference:
+- Primitive data types can hold only **single** value.
+- Primitive data types are **immutable**, meaning their value, once assigned, cannot be changed.
+```js
+//Number
+let age = 25; // a new
+age = 30; // a new variable is created for the js
+// means the memory address of 25 and 30 is diffrent
+```
+- Non-primitive data can hold **multiple** value.
+- They are **mutable** and their values can be changed.
+```js
+//Array
+let oddNumber = [1, 3, 5]
+//object
+let persion = {
+  name: "Joydeb",
+  age: 27
+}
+```
 
 
 
