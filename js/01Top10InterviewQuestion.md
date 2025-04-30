@@ -182,7 +182,20 @@ let nullVariable = null; // null assigned
 console.log(nullVariable); //Output: null
 ```
 *******************************************************************************************
+## What is type coercion in JS?
+Ans: Type coersion is the **automatic conversion of values** from one data type to another **during certain operations or comparisons**.
+```js
+let string = "42";
+let number = 42;
+let boolean = true;
+let nullValue = null;
 
+console.log(string + number); // Output: 4242
+console.log(number+boolean); // 42
+console.log(string == number); // true
+console.log(boolean == 1); // true
+console.log(boolean + nullValue); //1
+```
 
 
 
