@@ -138,7 +138,44 @@ let persion = {
   age: 27
 }
 ```
-
+*************************************************************
+## What is the difference between null and undefined in JS?
+#### A stand on the wall with also a paper holder
+```js
+let value1 = 0;
+```
+**Means there is a valid variable with also a value of data type number**
+#### A stand on the wall with also a paper holder
+```js
+let value1 = '';
+```
+**Means there is a valid variable with also a value of data type string**
+------------------------------------------------------------------------
+#### There is just a stand on the wall
+```js
+let value3 = null;
+```
+**Means there is a valid variable with a value of no data type**
+------------------------------------------------------------------------
+#### There is nothing on the wall
+```js
+let value4;
+```
+**Means there is a incomplete variable and not assigned anything**
+------------------------------------------------------------------------
+- **Undifined**: When a varibale is declared but has '**not been assigned a value**', it is automatically initialized with **undefined**.
+- Undifined can be used when you don't have the value **right now**, but you will get it after some logic or operation.
+```js
+let undefinedVariable; // no value assigned
+console.log(undefinedVariable); // Output: undefined
+```
+- **null**: null variable are intentionally assigned the "**null value**".
+- Null can be used, when you are **sure you do not have any value** for the particular variable.
+```js
+let nullVariable = null; // null assigned
+console.log(nullVariable); //Output: null
+```
+*******************************************************************************************
 
 
 
