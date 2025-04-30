@@ -61,6 +61,49 @@ x=10; // it will now give error: Cannot access 'x' before initialization
 console.log(x);
 let x;
 ```
+*******************************************************************************
+## Q: What are variables? What is the difference between var, let, and const?
+Ans: Variables are used to **store** data.
+#### Example:
+```js
+var count = 10;
+```
+### The Scope of var, let, count:
+- var -> function
+- let -> block
+- const -> block
+#### using var
+```js
+function(){
+  if(true){
+    var count = 10;
+    console.log(count); // output: 10
+  }
+  console.log(count); // output: 10
+}
+```
+**var creates a function-scoped variable**
+#### using let
+```js
+function(){
+  if(true){
+    let count = 10;
+    console.log(count); // output: 10
+  }
+  console.log(count); // Output: uncaught , Error: undefined
+}
+```
+**let creates a block-scoped variable**
+#### using const
+```js
+const z=10;
+z=20;
+//This will result
+//in an error
+console.log(z);
+```
+**const can be assigned only once, and its value cannot be changed afterwards.**
+*****************************************************************************
 
 
 
