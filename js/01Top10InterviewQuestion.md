@@ -150,21 +150,24 @@ let value1 = 0;
 let value1 = '';
 ```
 **Means there is a valid variable with also a value of data type string**
-.
+
+Null
 ------------------------------------------------------------------------
 #### There is just a stand on the wall
 ```js
 let value3 = null;
 ```
 **Means there is a valid variable with a value of no data type**
-.
+
+Undefined
 ------------------------------------------------------------------------
 #### There is nothing on the wall
 ```js
 let value4;
 ```
 **Means there is a incomplete variable and not assigned anything**
-.
+
+Difference
 ------------------------------------------------------------------------
 - **Undifined**: When a varibale is declared but has '**not been assigned a value**', it is automatically initialized with **undefined**.
 - Undifined can be used when you don't have the value **right now**, but you will get it after some logic or operation.
