@@ -16,3 +16,43 @@ if(true){
 console.log(variable);//10
 ```
 ********************************************************************************************************
+## Q: What is JSON?
+- JSON (JavaScript Object Notation) is a lightweight **data interchange format**.
+- JSON consists of **key-value** pairs.
+```json
+{
+  "name": "Joydeb",
+  "age": 14,
+  "isStudent": false,
+  "address": {
+    "street": "123 Main ST",
+    "city": "Kolkata",
+    "country": "India"
+  }
+}
+```
+************************************************************************
+## What is the use of typeof operator?
+- typeof operator is used to determine the **type of each variable**.
+- Real application use -> typeof operator can be used to **validate the data** received from external sources (api).
+```js
+let string = "42";
+let number = 42;
+console.log(typeof string);//string
+console.log(typeof number); //number
+```
+*************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
