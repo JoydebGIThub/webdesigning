@@ -238,7 +238,74 @@ const simpleFunction = createSimpleFunction();
 simpleFunction(); // retrun from a function
 
 ```
+*************************************************************************************
+## Q: What is pure and impure functions in JS?
+- Pure: A pure function that always produce the **same output for the same input**
+- pure functions cannot modify the **state**
+- Pure functions cannot have **side effect**
+```js
+//pure function
 
+function add(a, b){
+    return a+b;
+}
+console.log(add(5, 3)); //8
+console.log(add(5, 3)); //8
+console.log(add(5, 3)); //8
+```
+- Impure: An impure dunction can produce **different outputs for the same input**
+- Impure functions can modify the state.
+- Impure fucntions can have side effect
+```js
+//impur function
+let total =0;
+function addToTotal(value){
+    total +=value;
+    return total;
+}
+console.log(addToTotal(5));//5
+console.log(addToTotal(5));//10
+console.log(addToTotal(5));//15
+```
+*****************************************************************************
+## Q: What is function currying in JS?
+Ans: Currying in Javascript transforms a function with multiple arguments into a "**nested series of functions**", each taking a single argument.
+```js
+//Regular function
+function add(a,b){
+    return a+b;
+}
 
+// Curried version of multiply function
+function curriedMultiply(a){
+    return function(b){
+        return a+b;
+    };
+}
+```
+- Advantage: **Reusability, modularity, and specialization**. Big, complex function with multiple arguments can be ***brocken down* into small, reusable functions with fewer arguments.
+*************************************************************************************************************
+## Q: What are call, apply and bind methods in JS?
+- call, apply, and bind are three methods in JavaScript that are used to work with functions and **control how they are invoked** and what context they operate in.
+- These methods provide a way to manipulate the **this value** and pass arguments to functions.
+```js
+//Defining a function that uses the "this" context and an argument
+function sayHello(message){
+    console.log(`${message}, ${this.name}! `);
+}
+const person = {name: "Happy"};
+```
+1. call - using the **call** method to invoke the function with a specific context and argument
+```js
+sayHello.call(person, 'Hello'); // Hello Happy!
+```
+2. apply - using the **apply** method to invoke the function with a specific context and an array of arguments
+```js
+sayHello.apply(person, ['Hi']); // Hi Happy!
+```
+3. bind - using the **bind** method to create a new function with specific context (not invoking it immediately)
+```js
+const greetPerson = sayHello.bind(person);
+greetPerson('Greetings'); // Greetings, Happy!
 
-
+```
