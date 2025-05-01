@@ -192,8 +192,52 @@ button.addEventListener('click', function(){
 });
 ```
 **The addEventListener method of JS allows an event name and the function you want to perform on the event**
+### Lists of event listener:
+1. click Event: ```js addEventListener('click', handler)```
+2. Mouseover Event: ```js addEventListener('mouseover', handler)```
+3. keydown Event: ```js addEventListener('keydown', handler)```
+4. keyup Event: ```js addEventListener('keyup', handler)```
+5. Submit Event: ```js addEventListener('submit', handler)```
+6. Focus Event: ```js addEventListener('focus', handler)```
+7. Blur Event: ```js addEventListener('blur', handler)```
+8. change Event: ```js addEventListener('change', handler)```
+9. Load Event: ```js addEventListener('load', handler)```
+10. Resize Event: ```js addEventListener('resize', handler)```
+****************************************************************************************************
+## Q: What are First-Class function in JS?
+Ans: A programming language is said to have **First-class** functions if functions in that language are treated like **Other variables**
+### Functions treated like variables:
+1. Assignable:
+```js
+//Assigning function like a variable
+const myFunction = function(){
+    console.log("Interview! Happy");
+}
+myFunction(); // Interview! Happy
+```
+2. Passable as Argument
+```js
+function double(number){
+    return number * 2;
+}
+//call back function pass as argument like variable
+function performance(double, value){
+    return double(value);
+}
+console.log(performance(double, 5)); //10
+```
+3. Retrunable as values:
+```js
+// A function retrun another function
+function createSimpleFunction(){
+    retrun function(){
+        console.log("retrun from a function")
+    }
+}
+const simpleFunction = createSimpleFunction();
+simpleFunction(); // retrun from a function
 
-
+```
 
 
 
