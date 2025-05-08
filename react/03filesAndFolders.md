@@ -8,7 +8,24 @@
 ## Q: What is the role of src folder in React?
 - src folder is used to **store all the source code** of the application which is then responsible for the **dynamic changes in your web application**
 
-## What is the role of index.html page in React?
+## Q: What is the role of index.html page in React?
 - index.html file is the main HTML file(SPA) in React application.
 - Here the div with "id=root" will be replaced by the component inside **index.js/main.jsx file**.
+
+## Q: WHat is the role of index.js file and ReactDOM in React?
+- ReactDOM is a JavaScript library that renders components to the DOM or browser
+- The index.js file is the JavaScript file that replaces the root element of the index.html file with the newly rendered components.
+
+## Q: What is the role of App.js file in React?
+
+
+
+
+
+
+
+
+
+
+
 
