@@ -17,6 +17,7 @@ Ans: DOM(Document Object Model) represents the web page as a **tree-like structu
 ******************************************************************************
 ## Q: WHat is Virtual DOM? Difference between DOM and Virtual DOM?
 - React uses a **virtual DOM** to efficiently update the **UI(User Interface)** **without re-render the entire page**, which helps impove performance and make the application more responsive
+
 | **DOM**                                                                 | **Virtual DOM**                                                                      |
 |------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | 1. DOM is actual representation of the webpage.                        | Virtual DOM is lightweight copy of the DOM.                                           |
@@ -59,7 +60,7 @@ Ans: React is not good choice for very small applications.
 *******************************************************************************
 ## Q: What is the role of JSX in React?
 1. JSX stands for **JavaScript XML**
-2. JSX is used by React ti write **HTML-like code**
+2. JSX is used by React to write **HTML-like code**
 3. JSX is converted to JS via tools like **Bable**, beacuse Browsers understand JavaScript not JSX.
 *******************************************************************************
 ## Q: What is the difference between Declarative and Imperative syntax.
