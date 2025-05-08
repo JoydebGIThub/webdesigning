@@ -36,7 +36,7 @@ console.log(globalVariable);
 ```
 ******************************************************
 ## Q: What is Hoisting in JS?
-Ans: Hoisting is a JS behavior where functions and variable declarations are moved to the "**top**" of their respective scopes during the **compilation** phase. let doesn't support hoisting.
+Ans: Hoisting is a JS behavior where functions and variable declarations are moved to the "**top**" of their respective scopes during the **compilation** phase. let and arrow function doesn't support hoisting.
 ```js
 //Function hoisting
 myFunction();
