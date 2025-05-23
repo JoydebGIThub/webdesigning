@@ -1,3 +1,14 @@
+## Class and Functional Components
+- ✅ Class Component
+  - Older way to write components (before React Hooks).
+- ✅ Functional Component
+  - Simpler, cleaner syntax.
+  - Can now handle state and side effects with Hooks (useState, useEffect).
+  - Hooks let you use state and other React features in functional components
+  - Functional components with Hooks are now the standard.
+  - React team encourages using functional components unless there's a specific reason to use classes.
+  - Easier to test and maintain.
+
 ## Q: What is React? What is Role of React in software development?
 - React is an open source Javascript library
 - React is used for building **User Interface(UI)**
